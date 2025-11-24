@@ -1,14 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
 import { ref } from 'vue';
-
-const id = 2
-
-
-const recipes = ref([
-    {id: 1, name: "Pasta carbonara", desc: "Uno de los clasicos italianos mas cremosos", img: ""},
-    {id: 2, name: "Chicken curry", desc: "Pollo especial con salsa cremosa", img: ""}
-])
+import { recipesList } from '@/recipesList';
 
 
 </script>
@@ -16,8 +9,9 @@ const recipes = ref([
 <template>
     <h1>Recipes</h1>
     <ul>
-        <li v-for="recipe in recipes" :key="recipe.id">
+        <li v-for="recipe in recipesList" :key="recipe.id">
             <h3>{{ recipe.name }}</h3>
+            <p>{{ recipe.desc }}</p>
             <RouterLink :to="`/Recipes/${recipe.id}`">Ver receta</RouterLink>
         </li>
     </ul>

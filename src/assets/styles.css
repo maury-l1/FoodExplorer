@@ -1,0 +1,30 @@
+.mainImg {
+
+    width:  100%;
+
+}
+/* Bloque de bienvenida centrado */
+.welcome-container {
+  display: flex;
+  flex-direction: column;    /* h1 y p en columna */
+  justify-content: center;   /* Centrado vertical */
+  align-items: center;       /* Centrado horizontal */
+  text-align: center;        /* Centrar texto */
+  min-height: 30vh;          /* Ocupa gran parte de la pantalla */
+  padding: 16px;
+}
+
+/* Título */
+.welcome-container h1 {
+  font-size: 2.5rem;
+  font-family: 'Roboto Condensed';
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+/* Párrafo */
+.welcome-container p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px; /* Para que no quede muy ancho en pantallas grandes */
+}
