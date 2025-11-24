@@ -1,3 +1,11 @@
+.main-container {
+  display: flex;              /* coloca los hijos en fila */
+  justify-content: space-between; /* el primero a la izquierda, el segundo a la derecha */
+  align-items: flex-start;    /* alinea al inicio verticalmente, puedes cambiar a center si quieres */
+  gap: 16px;                  /* separación opcional entre componentes */
+  width: 100%;                /* ocupa todo el ancho disponible */
+}
+
 .mainImg {
 
     width:  100%;
@@ -27,4 +35,60 @@
   font-size: 1.2rem;
   color: #555;
   max-width: 600px; /* Para que no quede muy ancho en pantallas grandes */
+}
+/* Cada ProductItem como fila horizontal */
+.product-item {
+  display: flex;
+  align-items: center;  /* centra verticalmente */
+  gap: 16px;            /* separación entre elementos */
+  padding: 12px;
+  border: 1px solid #ccc; /* separación entre productos */
+  width: 300%;  
+  margin: 0%;        /* ocupa el ancho disponible */
+}
+
+/* Botón dentro de ProductItem */
+.product-item .add-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-left: auto;    /* empuja el botón a la derecha */
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column; /* apila elementos verticalmente */
+  align-items: center;    /* centra horizontalmente */
+  justify-content: center; /* opcional: centra verticalmente si hay altura */
+  text-align: center;     /* centra texto dentro de los elementos */
+  padding: 16px;
+  width: 30%;            /* ocupa todo el ancho disponible */
+  box-sizing: border-box;
+  border: solid  #ccc;
+}
+
+/* Opcional: estilos para la lista y el botón */
+.cart-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+  width: 100%;            /* para que los items se vean centrados dentro */
+  max-width: 400px;       /* limita el ancho de la lista */
+}
+
+.cart-container li {
+  display: flex;
+  justify-content: space-between; /* nombre a la izquierda, precio a la derecha */
+  margin-bottom: 8px;
+}
+
+.cart-container button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 16px;
 }

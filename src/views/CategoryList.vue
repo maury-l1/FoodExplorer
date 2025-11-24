@@ -1,20 +1,20 @@
 <script setup>
-import ProductItem from './ProductItem.vue';
-import { inject } from 'vue';
-const items = inject('items')
+    import ProductItem from './ProductItem.vue';
+    import { inject } from 'vue';
+    const items = inject('items')
 
 </script>
 
 <template>
 
-    <h2>Productos</h2>
-
+    
+    
     <div>
-        <ul>
-            <ProductItem v-for="i in items" :key="i.id" :id="i.id" :name="i.name" :price="i.price" />
-        </ul>
+       
+       <ProductItem v-for="i in items" :key="i.id" :id="i.id" :name ="i.name" :price = "i.price" />
+   
     </div>
 
-
+    
 
 </template>

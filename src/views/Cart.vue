@@ -10,7 +10,7 @@ const emptycart = () => {
 </script>
 
 <template>
-
+    <div class="cart-container">
     <h1>Cart</h1>
     <h3>Numero de items: {{ cart.length }} </h3>
     <ul>
@@ -19,6 +19,6 @@ const emptycart = () => {
         </li>
     </ul>
     <button @click="emptycart">Vaciar carrito</button>
-
+    </div>
 
 </template>

@@ -16,10 +16,10 @@ const addToCart = () => {
 </script>
 
 <template>
-    <li>
-        <p>{{ props.name }}</p>
-        <p>{{ props.price }}</p>
-        <button @click="addToCart" >Add to cart</button>
-    </li>
+    <div class="product-item">
+        <span>{{ name }}</span>
+        <span>{{ price }} €</span>
+        <button @click="addToCart" class="add-button">Agregar</button>
+    </div>
 
 </template>

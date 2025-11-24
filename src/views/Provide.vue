@@ -40,7 +40,7 @@ provide('cart', cart);
     <h1>
         Tienda de accesorios
     </h1>
-    <div>
+    <div class="main-container">
         <CategoryList />
         <Cart />
     </div>
